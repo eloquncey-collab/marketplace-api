@@ -50,6 +50,7 @@ jobs:
 
       - name: Run tests
         env:
+          DATABASE_URL: postgresql://user:password@localhost:5432/marketplace_test
           DATABASE_URL_TEST: postgresql://user:password@localhost:5432/marketplace_test
           SECRET_KEY: test-secret-key
           ALGORITHM: HS256
